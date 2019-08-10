@@ -4,6 +4,6 @@ Test game which made by Universe Library for OCaml.
 
 ## Catch Fish!!
 
- Try my game
+ Try the game
 
  - https://jukoyama.github.io/mygame/game.html
