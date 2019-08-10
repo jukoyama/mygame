@@ -6,6 +6,8 @@ open Color
 (* world_t :    りんごの座標,   鳥の座標,      鳥の加速度,    スコア の組の型 *)
 type world_t = (int * int) * (int * int) * (int * int) * int
 
+;;Random.self_init ()
+
 (* -----画像関係----- *)
 
 let width	      = 560	(* 画面の幅 *)
