@@ -10,8 +10,8 @@ type world_t = (int * int) * (int * int) * (int * int) * int
 
 (* ----------画像関係---------- *)
 
-let width  = 560	(* 画面の幅 *)
-let height = 560	(* 画面の高さ *)
+let width  = 560      (* 画面の幅 *)
+let height = 560      (* 画面の高さ *)
 
 let fish_width  = 50  (* 魚の画像の横幅 *)
 let fish_height = 35  (* 魚の画像の縦幅 *)
@@ -31,10 +31,10 @@ let bird	= read_image "images/penguin.png" (* 鳥 *)
 
 (* worldの初期値 *)
 let initial_world =
-  ((300, 300), (* 魚の位置 *)
-   (50,  500), (* 鳥の位置 *)
-   (20, 0),    (* 鳥の加速度 *)
-   0)			            (* スコア *)
+  ((300, 300),      (* 魚の位置 *)
+   (50,  500),      (* 鳥の位置 *)
+   (20, 0),         (* 鳥の加速度 *)
+   0)               (* スコア *)
 
 (* -----初期値関係ここまで----- *)
 
