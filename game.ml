@@ -8,32 +8,32 @@ type world_t = (int * int) * (int * int) * (int * int) * int
 
 ;;Random.self_init ()
 
-(* -----画像関係----- *)
+(* ----------画像関係---------- *)
 
-let width	      = 560	(* 画面の幅 *)
-let height	    = 560	(* 画面の高さ *)
+let width  = 560	(* 画面の幅 *)
+let height = 560	(* 画面の高さ *)
 
-let fish_width = 50	  (* 魚の画像の横幅 *)
+let fish_width  = 50  (* 魚の画像の横幅 *)
 let fish_height = 35  (* 魚の画像の縦幅 *)
-let bird_width  = 70	(* 鳥の横幅 *)
+let bird_width  = 70  (* 鳥の横幅 *)
 let bird_height = 79  (* 鳥の縦幅 *)
 
 let rec_width   = 400 (* ゲーム終了時画面の幅 *)
 let rec_height  = 400 (* ゲーム終了時画面の高さ *)
 
-let background	= read_image "images/ocean.jpeg"	      (* 背景画像 *)
-let fish	      = read_image "images/fish.png"		      (* 魚 *)
-let bird	      = read_image "images/penguin.png"		    (* 鳥 *)
+let background	= read_image "images/ocean.jpeg"  (* 背景画像 *)
+let fish	= read_image "images/fish.png"    (* 魚 *)
+let bird	= read_image "images/penguin.png" (* 鳥 *)
 
-(* -----画像関係ここまで----- *)
+(* ----------画像関係ここまで---------- *)
 
-(* -----初期値関係----- *)
+(* -------------初期値関係------------ *)
 
 (* worldの初期値 *)
 let initial_world =
-  ((300, 300),		      (* 魚の位置 *)
-   (50,  500),	      (* 鳥の位置 *)
-	 (20, 0),           (* 鳥の加速度 *)
+  ((300, 300), (* 魚の位置 *)
+   (50,  500), (* 鳥の位置 *)
+   (20, 0),    (* 鳥の加速度 *)
    0)			            (* スコア *)
 
 (* -----初期値関係ここまで----- *)
